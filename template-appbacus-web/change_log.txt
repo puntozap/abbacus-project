@@ -1,0 +1,6 @@
+Theme Version 2.0 Updates :
+Added : pug & gulp for task automation 
+==========================
+Theme Version 1.1 Updates :
+Added : facebook chat and mailchimp
+Added : color variations
