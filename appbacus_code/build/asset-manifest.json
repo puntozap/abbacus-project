@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/abacus/static/css/main.2c19e265.chunk.css",
+    "main.js": "/abacus/static/js/main.4fcbd0f2.chunk.js",
+    "main.js.map": "/abacus/static/js/main.4fcbd0f2.chunk.js.map",
+    "runtime~main.js": "/abacus/static/js/runtime~main.be3c5141.js",
+    "runtime~main.js.map": "/abacus/static/js/runtime~main.be3c5141.js.map",
+    "static/css/2.c4dbf7c0.chunk.css": "/abacus/static/css/2.c4dbf7c0.chunk.css",
+    "static/js/2.e5e097e8.chunk.js": "/abacus/static/js/2.e5e097e8.chunk.js",
+    "static/js/2.e5e097e8.chunk.js.map": "/abacus/static/js/2.e5e097e8.chunk.js.map",
+    "index.html": "/abacus/index.html",
+    "precache-manifest.479e4621d64590b1220491fd4af81f8d.js": "/abacus/precache-manifest.479e4621d64590b1220491fd4af81f8d.js",
+    "service-worker.js": "/abacus/service-worker.js",
+    "static/css/2.c4dbf7c0.chunk.css.map": "/abacus/static/css/2.c4dbf7c0.chunk.css.map",
+    "static/css/main.2c19e265.chunk.css.map": "/abacus/static/css/main.2c19e265.chunk.css.map",
+    "static/media/logo.svg": "/abacus/static/media/logo.5d5d9eef.svg"
+  }
+}
