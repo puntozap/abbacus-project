@@ -9,22 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- favicon-->
-    <link rel="shortcut icon" href="../../assets/images/favicon.png">
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}">
     <!-- Font Family-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <!-- Animation CSS-->
-    <link rel="stylesheet" href="../../assets/css/animate.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
     <!-- Owl carousel .css-->
-    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
     <!-- font-awesome css-->
-    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
     <!-- swiper slider-->
-    <link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
     <!-- Style .css-->
-    <link id="color" rel="stylesheet" href="../../assets/css/color1.css" media="screen">
+    <link id="color" rel="stylesheet" href="{{asset('assets/css/color1.css')}}" media="screen">
   </head>
   <body>
     <!-- loader-->
@@ -59,18 +59,18 @@
     <div class="fb-customerchat" attribution="setup_tool" page_id="2123438804574660" theme_color="#5f57ea" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?" logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"></div>
 
     <!-- js file-->
-    <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
     <!-- bootstrap js file-->
-    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
     <!-- popper js file-->
-    <script src="../../assets/js/popper.min.js"></script>
+    <script src="{{asset('assets/js/popper.min.js')}}"></script>
     <!-- Owl carousel js file-->
-    <script src="../../assets/js/owl.carousel.min.js"></script>
+    <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
     <!-- tilt js file-->
-    <script src="../../assets/js/tilt.jquery.js"></script>
+    <script src="{{asset('assets/js/tilt.jquery.js')}}"></script>
     <!-- script js file-->
-    <script src="../../assets/js/script.js"></script>
+    <script src="{{asset('assets/js/script.js')}}"></script>
     <!-- timer file-->
-    <script src="../../assets/js/timer.js"></script>
+    <script src="{{asset('assets/js/timer.js')}}"></script>
   </body>
 </html>
