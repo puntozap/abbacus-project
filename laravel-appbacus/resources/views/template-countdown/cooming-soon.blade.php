@@ -7,7 +7,7 @@
             <div class="clock-box">
               <div>
                 <div class="mb-4">
-                  <h2>We Are Launching Soon</h2>
+                  <h2>🎓 AppBacus se lanzara en</h2>
                   <div class="line"></div>
                 </div>
                 <div id="clockdiv">
