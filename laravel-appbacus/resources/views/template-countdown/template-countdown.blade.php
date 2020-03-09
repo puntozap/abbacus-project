@@ -24,7 +24,7 @@
     <!-- swiper slider-->
     <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
     <!-- Style .css-->
-    <link id="color" rel="stylesheet" href="{{asset('assets/css/color1.css')}}" media="screen">
+    <link id="color" rel="stylesheet" href="{{asset('assets/css/color4.css')}}" media="screen">
   </head>
   <body>
     <!-- loader-->
@@ -46,7 +46,7 @@
     <!-- Tap to top end-->
     <!-- facebook chat section start-->
     <div id="fb-root"></div>
-    <script>
+    <!-- <script>
       (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -54,7 +54,7 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
     <!-- Your customer chat code-->
     <div class="fb-customerchat" attribution="setup_tool" page_id="2123438804574660" theme_color="#5f57ea" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?" logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"></div>
 

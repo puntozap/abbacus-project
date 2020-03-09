@@ -5,15 +5,13 @@
             <div class="social-footer">
               <ul>
                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-12 text-center">
-            <p class="copyright">2018-19 Copyright by themeforest Powered by Pixelstrep</p>
+            <p class="copyright">AppBacus esta siendo desarrollado con 💗 por @Puntozap, Steff!, Zuldy & Chucho</p>
           </div>
         </div>
       </div>
