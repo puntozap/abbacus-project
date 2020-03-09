@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chatloop | Mobile App Landing HTML Templates</title>
+    <title>🎓AppBacus</title>
     <meta charset="utf-8">
     <meta name="description" content="Chat Loop Apps Template from pixelstrap">
     <meta name="keywords" content="Chat Loop Apps Template from pixelstrap">
