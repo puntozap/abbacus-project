@@ -36,10 +36,11 @@ class VoyagerBaseController extends Controller
     {
         // GET THE SLUG, ex. 'posts', 'pages', etc.
         $slug = $this->getSlug($request);
+        // dd($slug);
 
         // GET THE DataType based on the slug
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
-
+        // dd($dataType);
         // Check permission
         $this->authorize('browse', app($dataType->model_name));
 
