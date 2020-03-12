@@ -28,4 +28,5 @@ Route::group(['prefix' => 'api'], function () {
 
 
 Route::get('/','HomeController@index')->name('home');
+Route::get('/newsletter','HomeController@newsletter');
 

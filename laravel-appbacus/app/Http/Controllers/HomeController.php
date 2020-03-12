@@ -6,10 +6,18 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use App\Countdown;
+use App\Newsletter;
 
 
 class HomeController extends Controller
 {
+    public function newsletter(Request $request){
+        $Newsletter=new Newsletter;
+        $Newsletter->email=$request['EMAIL'];
+        $Newsletter->save();
+        return redirect("/");
+        // dd($request);
+    }
     public function index(){
         $Countdown=Countdown::first();
         // dd($Countdown);

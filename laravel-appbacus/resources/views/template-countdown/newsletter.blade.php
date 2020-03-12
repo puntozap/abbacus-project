@@ -8,9 +8,9 @@
           </div>
           <div class="col-sm-12 col-lg-8">
             <div class="email-box">
-              <form class="auth-form needs-validation" id="mc-embedded-subscribe-form" action="/newsletter" method="post" name="mc-embedded-subscribe-form" target="_blank">
+              <form class="auth-form needs-validation"  action="/newsletter" method="get"  >
                 <input class="form-control" id="email" name="EMAIL" placeholder="Ingresa tu correo" type="email" required="required">
-                <button class="btn btn-email" id="mc-submit" type="submit">Enviar</button>
+                <button class="btn btn-email"  type="submit">Enviar</button>
               </form>
             </div>
           </div>
