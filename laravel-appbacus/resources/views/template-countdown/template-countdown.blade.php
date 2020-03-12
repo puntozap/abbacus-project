@@ -71,6 +71,7 @@
     <!-- script js file-->
     <script src="{{asset('assets/js/script.js')}}"></script>
     <!-- timer file-->
-    <script src="{{asset('assets/js/timer.js')}}"></script>
+    <!-- <script src="{{asset('assets/js/timer.js')}}"></script> -->
+    @yield('scritps')
   </body>
 </html>
