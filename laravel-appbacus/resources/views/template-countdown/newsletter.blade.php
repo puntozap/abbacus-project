@@ -8,8 +8,8 @@
           </div>
           <div class="col-sm-12 col-lg-8">
             <div class="email-box">
-              <form class="auth-form needs-validation" id="mc-embedded-subscribe-form" action="https://pixelstrap.us19.list-manage.com/subscribe/post?u=5a128856334b598b395f1fc9b&amp;id=082f74cbda" method="post" name="mc-embedded-subscribe-form" target="_blank">
-                <input class="form-control" id="mce-EMAIL" name="EMAIL" placeholder="Ingresa tu correo" type="email" required="required">
+              <form class="auth-form needs-validation" id="mc-embedded-subscribe-form" action="/newsletter" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                <input class="form-control" id="email" name="EMAIL" placeholder="Ingresa tu correo" type="email" required="required">
                 <button class="btn btn-email" id="mc-submit" type="submit">Enviar</button>
               </form>
             </div>

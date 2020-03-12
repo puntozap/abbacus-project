@@ -43,6 +43,9 @@
         </div>
       </div>
 </section>
+@php
+  
+@endphp
 @section('scritps')
 <script>
 
@@ -86,12 +89,11 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 // var deadline = new Date(Date.parse(new Date()) + 50 * 24 * 60 * 60 * 1000);
-var today = new Date();
+var today = new Date('{{$Countdown['created_at']}}');
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
-mm++;
-
+// console.log(end)
 deadline = yyyy + '-' + mm + '-' + dd;
 
 console.log(deadline);
