@@ -3,8 +3,8 @@
   <head>
     <title>🎓AppBacus</title>
     <meta charset="utf-8">
-    <meta name="description" content="Chat Loop Apps Template from pixelstrap">
-    <meta name="keywords" content="Chat Loop Apps Template from pixelstrap">
+    <meta name="description" content="Appbacus: el abaco de notas automatizado que calcula sabiendo tu nota previa y la nota del examen final">
+    <meta name="keywords" content="Appbacus: el abaco de notas automatizado que calcula sabiendo tu nota previa y la nota del examen final">
     <meta name="author" content="App">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
