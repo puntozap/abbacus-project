@@ -7,7 +7,6 @@ import FormData from './formData/formData';
 
 import { Button, Container, Col, Input, Row, Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import InputRange from 'react-input-range';
-import 'react-input-range/lib/css/index.css';
 
 import Slider from 'react-rangeslider'
 
