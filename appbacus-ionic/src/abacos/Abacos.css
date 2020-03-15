@@ -1,0 +1,38 @@
+ion-content ion-toolbar {
+  --background: transparent;
+}
+.text-center{
+  text-align: center;
+}
+.font-3em{
+  font-size: 3em;
+}
+.font-2em{
+  font-size: 2em;
+}
+.unapproved{
+  background: #3a3a3a;
+  color:#ffffff
+}
+.approved{
+  background: #868686;
+  color:#ffffff
+}
+.approved-2{
+  background: #007bff;
+  color:#ffffff;
+}
+
+.approved-3{
+  background: #17a2b8;
+  color:#ffffff;
+}
+
+.approved-4{
+  background: #014c12;
+  color:#ffffff;
+}
+.approved-5{
+  background: #28a745;
+  color:#ffffff;
+}
