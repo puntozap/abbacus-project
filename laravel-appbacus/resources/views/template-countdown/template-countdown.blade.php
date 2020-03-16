@@ -72,6 +72,16 @@
     <script src="{{asset('assets/js/script.js')}}"></script>
     <!-- timer file-->
     <!-- <script src="{{asset('assets/js/timer.js')}}"></script> -->
+    <script>
+  function sendEmail(){
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($("#email").val()))
+    {
+      alert("Gracias por Registrar su correo en appbacus. Un mensaje de confirmacion recibiras y en cuanto este lista la aplicacion, te avisaremos para que la descargues.")
+      $(".auth-form").submit();
+    }
+    
+  }
+</script>
     @yield('scritps')
   </body>
 </html>

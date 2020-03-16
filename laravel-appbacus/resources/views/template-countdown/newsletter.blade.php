@@ -8,9 +8,9 @@
           </div>
           <div class="col-sm-12 col-lg-8">
             <div class="email-box">
-              <form class="auth-form needs-validation"  action="/newsletter" method="get"  >
-                <input class="form-control" id="email" name="EMAIL" placeholder="Ingresa tu correo" type="email" required="required">
-                <button class="btn btn-email"  type="submit">Enviar</button>
+              <form class="auth-form needs-validation"  action="/newsletter" method="get" >
+                <input class="form-control" id="email" name="EMAIL"  placeholder="Ingresa tu correo" type="email" required="required">
+                <button class="btn btn-email"  type="button" onclick="sendEmail()" >Enviar</button>
               </form>
             </div>
           </div>
