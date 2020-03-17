@@ -81,6 +81,7 @@
     }
     
   }
+  
 </script>
     @yield('scritps')
   </body>

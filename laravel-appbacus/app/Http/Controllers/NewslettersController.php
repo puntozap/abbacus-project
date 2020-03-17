@@ -397,6 +397,17 @@ class NewslettersController extends \TCG\Voyager\Http\Controllers\Controller
      *
      * @return \Illuminate\Http\RedirectResponse
      */
+    public function sendMessage($email,$message){
+        // dd("hola");
+        // $Newsletter=Newsletter::where()->first();
+        // dd($Newsletter);
+        $name=$email;
+        // $email->notify(new \App\Notifications\registerAdministradorLugarCultural());
+        $text=$message;
+        $button="Mas Informacion";
+        $urls="";
+        Mail::to($email)->send(new SendNewsletter($name,$text,$button,$urls));
+    }
     public function store(Request $request)
     {
         // dd($request);
@@ -413,17 +424,20 @@ class NewslettersController extends \TCG\Voyager\Http\Controllers\Controller
 
         // event(new BreadDataAdded($dataType, $data));
         $Newsletter=Newsletter::get();
-        foreach($Newsletter as $News){
-            $email=$News->email;
-            $name=$email;
-            // $email->notify(new \App\Notifications\registerAdministradorLugarCultural());
-            $text=$request["message"];
-            $button="Mas Informacion";
-            $urls="";
-            Mail::to($email)->send(new SendNewsletter($name,$News,$text,$button,$urls));
-        }
+        $return["message"]=$request['message'];
+        $return["Newsletter"]=$Newsletter;
+        return response()->json($return);
+        // foreach($Newsletter as $News){
+        //     $email=$News->email;
+        //     $name=$email;
+        //     // $email->notify(new \App\Notifications\registerAdministradorLugarCultural());
+        //     $text=$request["message"];
+        //     $button="Mas Informacion";
+        //     $urls="";
+        //     Mail::to($email)->send(new SendNewsletter($name,$News,$text,$button,$urls));
+        // }
         
-        return redirect("/admin/newsletters");
+        // return redirect("/admin/newsletters");
         // if (!$request->has('_tagging')) {
         //     if (auth()->user()->can('browse', $data)) {
         //         $redirect = redirect()->route("voyager.{$dataType->slug}.index");

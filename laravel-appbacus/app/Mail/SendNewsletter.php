@@ -21,14 +21,14 @@ class SendNewsletter extends Mailable
     private $text;
     private $button;
     private $urls;
-    public function __construct($email,$request,$text,$button,$urls)
+    public function __construct($email,$text,$button,$urls)
     {
         $this->email=$email;
-        $this->request=$request;
+        // $this->request=$request;
         $this->text=$text;
         $this->button=$button;
         $this->urls=$urls;
-        // dd($urls);
+        // dd($request);
     }
 
     /**
@@ -38,7 +38,7 @@ class SendNewsletter extends Mailable
      */
     public function build()
     {
-        $subject="🎓AppBacus Notifica un nuevo Mensaje para:  ".$this->request['email'];
+        $subject="🎓AppBacus Notifica un nuevo Mensaje para:  ".$this->email;
         $text=$this->text;
         $button=$this->button;
         $urls=$this->urls;

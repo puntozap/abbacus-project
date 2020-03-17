@@ -18,6 +18,8 @@
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+    Route::get('/sendMessage/{email}/{message}','NewslettersController@sendMessage')->name('homes');
+
 });
 
 

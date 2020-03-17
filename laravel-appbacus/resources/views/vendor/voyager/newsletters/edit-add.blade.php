@@ -27,7 +27,7 @@
                     <!-- form start -->
                     <form role="form"
                             class="form-edit-add"
-                            action="{{ $edit ? route('voyager.'.$dataType->slug.'.update', $dataTypeContent->getKey()) : route('voyager.'.$dataType->slug.'.store') }}"
+                            action="{{ route('voyager.'.$dataType->slug.'.store') }}"
                             method="POST" enctype="multipart/form-data">
                         <!-- PUT Method if we are editing -->
                         @if($edit)
@@ -93,7 +93,7 @@
 
                         <div class="panel-footer">
                             @section('submit-buttons')
-                                <button type="submit" class="btn btn-primary save">{{ __('voyager::generic.save') }}</button>
+                                <button type="button" class="btn btn-primary save">{{ __('voyager::generic.save') }}</button>
                             @stop
                             @yield('submit-buttons')
                         </div>
@@ -209,5 +209,31 @@
             });
             $('[data-toggle="tooltip"]').tooltip();
         });
+    $(".save").click(function(e){
+        // alert();
+        e.preventDefault();
+        // return '';
+        $.ajax({
+                  type: 'post',
+                  dataType: "json",
+                  url: "{{ route('voyager.'.$dataType->slug.'.store') }}", //Path to handler
+                  data: $(".form-edit-add").serialize(),
+                  success: function(data){
+                      console.log(data)
+                      //sendMessage
+                      for(var i=0;i<data.Newsletter.length;i++){
+                        $.ajax({
+                                type: 'get',
+                                dataType: "json",
+                                url: "/admin/sendMessage/"+data.Newsletter[i].email+"/"+data.message, 
+                                success: function(data){
+                                    console.log("enviado...");
+                                }
+                        });
+                      }
+                  }
+      });
+
+    })
     </script>
 @stop
