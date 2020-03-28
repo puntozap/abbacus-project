@@ -22,7 +22,7 @@ Route::group(['middleware' => ['apiauth']], function () {
     Route::resource("/universities","UniversitiesController");
     Route::resource("/associated_universities","AssociatedUniversitiesController");
     Route::resource("/users","UsersController")->only([
-        'index', 'show','store','update','destroy'
+        'index', 'show','update','destroy'
     ]);
 });
 
