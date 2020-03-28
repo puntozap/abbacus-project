@@ -17,4 +17,19 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+Route::resource("/users","UsersController");
+Route::post('/login',"UsersController@login");
+
+
+/*
+Route::post('hola', ['middleware' => 'apiauth', function (Request $request) {
+    //
+    return  "hola mundo";
+}]);*/
+
+/*Route::get("/",function(){
+    return ["error"=>false];
+});*/
+
 Route::resource("users","UsersController");

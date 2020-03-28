@@ -29,6 +29,14 @@ Route::group(['prefix' => 'api'], function () {
 });*/
 
 
+
+/*Route::group(['middleware' => ['api']], function () {
+    Route::get('hola', function(){
+        return "hola mundo";
+    });
+});*/
+
+
 Route::get('/','HomeController@index')->name('home');
 Route::get('/newsletter','HomeController@newsletter');
 
