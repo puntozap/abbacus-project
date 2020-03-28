@@ -17,10 +17,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['middleware' => ['apiauth']], function () {
+    
+    Route::resource("/universities","UniversitiesController");
+    Route::resource("/associated_universities","AssociatedUniversitiesController");
+    Route::resource("/users","UsersController")->only([
+        'index', 'show','store','update','destroy'
+    ]);
+});
 
-Route::resource("/users","UsersController");
-Route::resource("/universities","UniversitiesController");
-Route::resource("/associated_universities","AssociatedUniversitiesController");
+
+
+
 
 Route::post('/login',"UsersController@login");
 

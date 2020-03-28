@@ -18,20 +18,18 @@ class ApiAuth
      */
     public function handle($request, Closure $next)
     {
-       // return response()->json(['error' => $request->input("email") ]);
-        $credentials = $request->only('email', 'password');
-      // return  response()->json(['error' =>  $credentials ]);
-    //return response()->json(['error' => JWTAuth::attempt( $credentials ) ]); //$credentials;
-        // return $request;//->only('email', 'password');
-        /*try {
-            if (! $token = JWTAuth::attempt($credentials)) {
-                return response()->json(['error' => 'invalid_credentials'], 400);
+       
+        
+            if (!$user = JWTAuth::parseToken()->authenticate()) {
+                    return response()->json(['user_not_found'], 404);
             }
-        } catch (JWTException $e) {
-            return response()->json(['error' => 'could_not_create_token'], 500);
-        }
-        return response()->json(compact('token'));*/
-        //return redirect("/adios");
-        return $next($request);
+            //return response()->json(compact('user'));
+            $request->user = $user;
+            return $next($request);
+           /// return response()->json([ "datos" => $request , "email" => $request->input('id_user') ]);
+
+        //return response()->json(['error' => 'ajaaa']);
+        
+        //return $next($request);
     }
 }

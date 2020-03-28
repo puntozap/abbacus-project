@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\AssociatedUniversities;
 use Illuminate\Support\Facades\DB;
+use JWTAuth;
+use Tymon\JWTAuth\Exceptions\JWTException;
+
 
 class AssociatedUniversitiesController extends Controller
 {
@@ -15,7 +18,12 @@ class AssociatedUniversitiesController extends Controller
      */
     public function index()
     {
-        //
+        //try {
+            //if (!$user = JWTAuth::parseToken()->authenticate()) {
+             //       return response()->json(['user_not_found'], 404);
+           // }
+                
+            return response()->json(compact('user'));
     }
 
     /**
@@ -36,9 +44,11 @@ class AssociatedUniversitiesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        
+       // return $request->user->id;
         $data = new AssociatedUniversities();
-        $data->id_user = $request->input("id_user");
+        $data->id_user = $request->user->id;
         $data->id_university = $request->input("id_university");
         $data->save();
         return [ "response" => "successfully" ];
