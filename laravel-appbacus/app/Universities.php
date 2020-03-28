@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-class Countdown extends Model
+class Universities extends Model
 {
+    //
     public $timestamps = false;
 }
