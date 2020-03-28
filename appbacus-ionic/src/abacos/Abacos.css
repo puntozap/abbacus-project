@@ -22,7 +22,9 @@ ion-content ion-toolbar {
   background: #007bff;
   color:#ffffff;
 }
-
+/* .font-size-title-login{
+  font-size: 2em;
+} */
 .approved-3{
   background: #17a2b8;
   color:#ffffff;

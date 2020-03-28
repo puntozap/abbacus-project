@@ -1,0 +1,82 @@
+ion-content ion-toolbar {
+  --background: transparent;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.font-3em{
+  font-size: 3em;
+}
+.font-2em{
+  font-size: 2em;
+}
+.unapproved{
+  background: #3a3a3a;
+  color:#ffffff
+}
+.approved{
+  background: #868686;
+  color:#ffffff
+}
+.approved-2{
+  background: #007bff;
+  color:#ffffff;
+}
+
+.approved-3{
+  background: #17a2b8;
+  color:#ffffff;
+}
+
+.approved-4{
+  background: #014c12;
+  color:#ffffff;
+}
+.approved-5{
+  background: #28a745;
+  color:#ffffff;
+}
+.animation-circle i{
+  top: 0;
+  background: #eee;
+}
+.font-size-title-login{
+  font-size: 2.5em;
+}
+i{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(#5f57ea), to(#9647db));
+  background: linear-gradient(to right, #5f57ea 0%, #9647db 100%);
+  border-radius: 100%;
+  opacity: 0.5;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-animation: ripple1 3s linear infinite;
+  animation: ripple1 3s linear infinite;
+}
+
+i:nth-child(2) {
+  -webkit-animation: ripple2 3s linear infinite;
+  animation: ripple2 3s linear infinite;
+}
+i:nth-child(3) {
+  -webkit-animation: ripple3 3s linear infinite;
+  animation: ripple3 3s linear infinite;
+}
+@keyframes ripple2{
+  0%{-webkit-transform:scale(3.5);transform:scale(3.5)}
+  100%{-webkit-transform:scale(5.5);transform:scale(5.5)}
+}
+@keyframes ripple3{
+  0%{-webkit-transform:scale(1.5);transform:scale(1.5)}
+  100%{-webkit-transform:scale(3.5);transform:scale(3.5)}
+}
+@keyframes ripple1{
+  0%{-webkit-transform:scale(5.5);transform:scale(5.5);opacity:0.3}
+  100%{-webkit-transform:scale(8.5);transform:scale(8.5);opacity:0.0}
+}

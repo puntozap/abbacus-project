@@ -48,12 +48,12 @@ const Menu: React.FunctionComponent<MenuProps> = ({ selectedPage }) => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
+          <IonListHeader ><IonItem routerLink={"/"} >Iniciar Sesion</IonItem></IonListHeader>
+          <IonNote></IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
-                <IonItem className={selectedPage === appPage.title ||appPage.title=='' ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
+                 <IonItem className={selectedPage === appPage.title ||appPage.title=='' ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
                   <IonIcon slot="start" icon={appPage.iosIcon} />
                   <IonLabel>{appPage.title}</IonLabel>
                 </IonItem>
